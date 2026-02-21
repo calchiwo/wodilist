@@ -195,3 +195,10 @@ python benchmarks/bench.py
 - Icons or emoji
 - Per-file git calls
 - Replacing `find`, `tree`, or `du`
+
+## License
+MIT
+
+## Author
+
+Caleb Wodi
