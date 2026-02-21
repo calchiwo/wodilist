@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/pypi/pyversions/wodilist?logo=python&logoColor=white)](https://pypi.org/project/wodilist/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-A smarter replacement for `ls` with relevance sorting and git awareness. Answers *what matters right now*, not just *what exists* on the disk.
+`wodilist` is a command-line directory lister designed as a smarter replacement for `ls` with relevance sorting and git awareness. Answers *what matters right now*, not just *what exists* on the disk.
 
 ```
 $ wodilist
