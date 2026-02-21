@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wodilist"
+version = "0.1.0"
+description = "A smarter replacement for ls with relevance sorting and git awareness."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    {name = "Caleb Wodi", email = "calebwodi33@gmail.com"}
+]
+requires-python = ">=3.10"
+dependencies = []
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/calchiwo/wodilist"
+Repository = "https://github.com/calchiwo/wodilist.git"
+"Bug tracker" = "https://github.com/calchiwo/wodilist/issues"
+
+[project.scripts]
+wodilist = "wodilist.cli:entrypoint"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "pytest-benchmark",
+]
+
+[tool.setuptools.packages.find]
+include = ["wodilist*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
